@@ -1,0 +1,17 @@
+module(
+    name = "root",
+    version = "0",
+)
+
+bazel_dep(name = "nested", version = "0")
+bazel_dep(name = "helper", version = "0")
+
+local_path_override(
+    module_name = "nested",
+    path = "nested",
+)
+
+local_path_override(
+    module_name = "helper",
+    path = "helper",
+)

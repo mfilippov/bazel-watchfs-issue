@@ -1,0 +1,8 @@
+load("@helper//:consts.bzl", "NAME")
+
+filegroup(
+    name = NAME,
+    visibility = ["//visibility:public"],
+)
+# pad
+# pad

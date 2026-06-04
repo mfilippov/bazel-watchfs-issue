@@ -1,0 +1,6 @@
+module(
+    name = "nested",
+    version = "0",
+)
+
+bazel_dep(name = "helper", version = "0")
